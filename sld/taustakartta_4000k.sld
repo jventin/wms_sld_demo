@@ -181,7 +181,7 @@
           <Title>82100 Aluemeren ulkoraja</Title>          
       
           <ogc:Filter>
-            <ogc:PropertyIsEqualTo>
+            <ogc:PropertyIsEqualTo>	
               <ogc:PropertyName>kohdeluokk</ogc:PropertyName>
               <ogc:Literal>82100</ogc:Literal>
             </ogc:PropertyIsEqualTo>
@@ -191,7 +191,7 @@
           
           <LineSymbolizer uom="http://www.opengeospatial.org/se/units/metre">
             <Stroke>
-              <CssParameter name="stroke">#d0aad4</CssParameter>
+              <CssParameter name="stroke">#949392</CssParameter>
               <CssParameter name="stroke-width">400</CssParameter>
               <CssParameter name="stroke-dasharray">9600 2400</CssParameter>              
               <CssParameter name="stroke-linecap">butt</CssParameter>
@@ -203,7 +203,7 @@
     
  
         
-        <Rule>
+ <!--        <Rule>
           <Name>84115</Name>
           <Title>84115 Maakunnan raja</Title>          
       
@@ -225,10 +225,10 @@
             </Stroke>
           </LineSymbolizer>        
       
-        </Rule>        
+        </Rule>         -->
     
  
-        
+<!--         
         <Rule>
           <Name>84112</Name>
           <Title>84112 Aluehallintoviraston toimialueen raja</Title>          
@@ -251,7 +251,7 @@
             </Stroke>
           </LineSymbolizer>        
       
-        </Rule>        
+        </Rule>         -->
     
  
         
@@ -270,8 +270,8 @@
           
           <LineSymbolizer uom="http://www.opengeospatial.org/se/units/metre">
             <Stroke>
-              <CssParameter name="stroke">#d0aad4</CssParameter>
-              <CssParameter name="stroke-width">2000</CssParameter>              
+              <CssParameter name="stroke">#949391</CssParameter>
+              <CssParameter name="stroke-width">1000</CssParameter>              
               <CssParameter name="stroke-linecap">round</CssParameter>
               <CssParameter name="stroke-linejoin">round</CssParameter>        
             </Stroke>

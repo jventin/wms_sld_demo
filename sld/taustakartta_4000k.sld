@@ -1,12 +1,12 @@
 <?xml version="1.0" ?>
 <StyledLayerDescriptor version="1.0.0" xmlns="http://www.opengis.net/sld" xmlns:ogc="http://www.opengis.net/ogc" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.opengis.net/sld http://schemas.opengis.net/sld/1.0.0/StyledLayerDescriptor.xsd">
+
+
   <NamedLayer>
     <Name>mtk:manner</Name>
     <UserStyle>
       <FeatureTypeStyle>
         <Rule>
-          <!--MinScaleDenominator>1500000</MinScaleDenominator-->
-          <!--MaxScaleDenominator>5000000</MaxScaleDenominator-->
           <PolygonSymbolizer>
             <Fill>
               <CssParameter name="fill">#cccccc</CssParameter>
@@ -16,23 +16,18 @@
       </FeatureTypeStyle>
     </UserStyle>
   </NamedLayer>
-    <NamedLayer>
+  
+  <NamedLayer>
     <Name>mtk:meret</Name>
     <UserStyle>
-
       <Title>taustakartta_meri suomen ulkopuolinen</Title>
-
-      <FeatureTypeStyle>
-        
+      <FeatureTypeStyle>        
         <Rule>
           <Name>meri_taustakartta</Name>
-          <!--MinScaleDenominator>1500000</MinScaleDenominator-->
-          <!--MaxScaleDenominator>5000000</MaxScaleDenominator-->
           <PolygonSymbolizer>
             <Fill>
               <CssParameter name="fill">#bfd8ff</CssParameter>
             </Fill>
-
           </PolygonSymbolizer>
         </Rule>
       </FeatureTypeStyle>
@@ -46,18 +41,15 @@
         <Rule>
           <Name>52100</Name>
           <Title>52100 taustavari</Title>          
-      <Abstract>kaytetan KorkeusAlue aluetta taustavarin aikaansaamiseksi</Abstract>
-      
-          <ogc:Filter>
+          <Abstract>kaytetan KorkeusAlue aluetta taustavarin aikaansaamiseksi</Abstract>
+          
+		  <ogc:Filter>
             <ogc:PropertyIsEqualTo>
               <ogc:PropertyName>kohdeluokk</ogc:PropertyName>
               <ogc:Literal>52100</ogc:Literal>
             </ogc:PropertyIsEqualTo>
           </ogc:Filter>      
 
-          <!--MinScaleDenominator>1500000</MinScaleDenominator-->
-          <!-- <MaxScaleDenominator>750000</MaxScaleDenominator> -->
-          
           <PolygonSymbolizer> 
             <Fill>       
               <CssParameter name="fill">#D6EBD3</CssParameter>
@@ -68,13 +60,12 @@
       </FeatureTypeStyle>
     </UserStyle>
   </NamedLayer>  
+  
   <NamedLayer>
     <Name>mtkshp4500k:vesialue</Name>
     <UserStyle>
       <FeatureTypeStyle> 
-    
-<!--  Merivesi --> 
-        
+
         <Rule>
           <Name>36211</Name>
           <Title>36211 Merivesi</Title>          
@@ -85,9 +76,6 @@
               <ogc:Literal>36211</ogc:Literal>
             </ogc:PropertyIsEqualTo>
           </ogc:Filter>      
-
-          <!--MinScaleDenominator>1500000</MinScaleDenominator-->
-          <!-- <MaxScaleDenominator>750000</MaxScaleDenominator> -->
           
           <PolygonSymbolizer> 
             <Fill>       
@@ -96,9 +84,7 @@
           </PolygonSymbolizer>  
           
         </Rule>      
-    
-<!--  J?rvivesi - alue ja reunaviiva --> 
-        
+
         <Rule>
           <Name>36200</Name>
           <Title>36200 J?rvivesi - alue ja reunaviiva</Title>          
@@ -110,9 +96,6 @@
             </ogc:PropertyIsEqualTo>
           </ogc:Filter>      
 
-          <!--MinScaleDenominator>1500000</MinScaleDenominator-->
-          <!-- <MaxScaleDenominator>750000</MaxScaleDenominator> -->
-          
           <PolygonSymbolizer> 
             <Fill>       
               <CssParameter name="fill">#bfd8ff</CssParameter>
@@ -136,9 +119,7 @@
     <Name>mtkshp4500k:maasto1reuna</Name>
     <UserStyle>
       <FeatureTypeStyle> 
-    
-<!--  Meren rantaviiva --> 
-        
+
         <Rule>
           <Name>30223</Name>
           <Title>30223 Meren rantaviiva</Title>          
@@ -150,10 +131,6 @@
             </ogc:PropertyIsEqualTo>
           </ogc:Filter>      
 
-          <!--MinScaleDenominator>1500000</MinScaleDenominator-->
-          <!-- <MaxScaleDenominator>750000</MaxScaleDenominator> -->
-
-          
           <LineSymbolizer uom="http://www.opengeospatial.org/se/units/metre">
             <Stroke>
               <CssParameter name="stroke">#86bce3</CssParameter>
@@ -167,14 +144,11 @@
       </FeatureTypeStyle>
     </UserStyle>
   </NamedLayer>  
-
-  <NamedLayer>
+  <!--NamedLayer>
     <Name>mtkshp4500k:vesiviiva4500</Name>
     <UserStyle>
       <FeatureTypeStyle> 
-  
-<!--  yli 500 m leve� virtavesi --> 
-        
+
         <Rule>
           <Name>36325</Name>
           <Title>36325 yli 500 m leve� virtavesi</Title>          
@@ -186,10 +160,6 @@
             </ogc:PropertyIsEqualTo>
           </ogc:Filter>      
 
-          <!--MinScaleDenominator>1500000</MinScaleDenominator-->
-          <!--MaxScaleDenominator>5000000</MaxScaleDenominator-->
-
-          
           <LineSymbolizer uom="http://www.opengeospatial.org/se/units/metre">
             <Stroke>
               <CssParameter name="stroke">#86bce3</CssParameter>
@@ -200,12 +170,10 @@
           </LineSymbolizer>      
       
         </Rule>        
-    
-<!--  125-500 m leve� virtavesi --> 
-        
+
         <Rule>
           <Name>36324</Name>
-          <Title>36324 125-500 m leve� virtavesi</Title>          
+          <Title>36324 125-500 m levea virtavesi</Title>          
       
           <ogc:Filter>
             <ogc:PropertyIsEqualTo>
@@ -214,10 +182,6 @@
             </ogc:PropertyIsEqualTo>
           </ogc:Filter>      
 
-          <!--MinScaleDenominator>1500000</MinScaleDenominator-->
-          <!--MaxScaleDenominator>5000000</MaxScaleDenominator-->
-
-          
           <LineSymbolizer uom="http://www.opengeospatial.org/se/units/metre">
             <Stroke>
               <CssParameter name="stroke">#86bce3</CssParameter>
@@ -229,11 +193,11 @@
       
         </Rule>        
     
-<!--  50-125 m leve� virtavesi --> 
+ 
         
         <Rule>
           <Name>36322</Name>
-          <Title>36322 50-125 m leve� virtavesi</Title>          
+          <Title>36322 50-125 m levea virtavesi</Title>          
       
           <ogc:Filter>
             <ogc:PropertyIsEqualTo>
@@ -241,10 +205,8 @@
               <ogc:Literal>36322</ogc:Literal>
             </ogc:PropertyIsEqualTo>
           </ogc:Filter>      
-
-          <!--MinScaleDenominator>1500000</MinScaleDenominator-->
-          <!--MaxScaleDenominator>5000000</MaxScaleDenominator-->
-
+          
+          
           
           <LineSymbolizer uom="http://www.opengeospatial.org/se/units/metre">
             <Stroke>
@@ -257,7 +219,7 @@
       
         </Rule>        
     
-<!--  20-50 m leve� virtavesi --> 
+ 
         
         <Rule>
           <Name>36321</Name>
@@ -269,10 +231,8 @@
               <ogc:Literal>36321</ogc:Literal>
             </ogc:PropertyIsEqualTo>
           </ogc:Filter>      
-
-          <!--MinScaleDenominator>1500000</MinScaleDenominator-->
-          <!--MaxScaleDenominator>5000000</MaxScaleDenominator-->
-
+          
+          
           
           <LineSymbolizer uom="http://www.opengeospatial.org/se/units/metre">
             <Stroke>
@@ -285,7 +245,7 @@
       
         </Rule>        
     
-<!--  5-20 m leve� virtavesi --> 
+ 
         
         <Rule>
           <Name>36314</Name>
@@ -297,10 +257,8 @@
               <ogc:Literal>36314</ogc:Literal>
             </ogc:PropertyIsEqualTo>
           </ogc:Filter>      
-
-          <!--MinScaleDenominator>1500000</MinScaleDenominator-->
-          <!--MaxScaleDenominator>5000000</MaxScaleDenominator-->
-
+          
+          
           
           <LineSymbolizer uom="http://www.opengeospatial.org/se/units/metre">
             <Stroke>
@@ -312,16 +270,15 @@
           </LineSymbolizer>      
       
         </Rule>      
-
       </FeatureTypeStyle>
     </UserStyle>
-  </NamedLayer>  
+  </NamedLayer-->  
   <NamedLayer>
     <Name>mtkshp4500k:hallintoalueraja</Name>
     <UserStyle>
       <FeatureTypeStyle> 
     
-<!--  Aluemeren ulkoraja --> 
+ 
         
         <Rule>
           <Name>82100</Name>
@@ -333,10 +290,8 @@
               <ogc:Literal>82100</ogc:Literal>
             </ogc:PropertyIsEqualTo>
           </ogc:Filter>      
-
-          <!--MinScaleDenominator>1500000</MinScaleDenominator-->
-          <!--MaxScaleDenominator>5000000</MaxScaleDenominator-->
-
+          
+          
           
           <LineSymbolizer uom="http://www.opengeospatial.org/se/units/metre">
             <Stroke>
@@ -350,7 +305,7 @@
       
         </Rule>            
     
-<!--  Maakunnan raja --> 
+ 
         
         <Rule>
           <Name>84115</Name>
@@ -362,10 +317,8 @@
               <ogc:Literal>84115</ogc:Literal>
             </ogc:PropertyIsEqualTo>
           </ogc:Filter>      
-
-          <!--MinScaleDenominator>1500000</MinScaleDenominator-->
-          <!--MaxScaleDenominator>5000000</MaxScaleDenominator-->
-
+          
+          
           
           <LineSymbolizer uom="http://www.opengeospatial.org/se/units/metre">
             <Stroke>
@@ -378,7 +331,7 @@
       
         </Rule>        
     
-<!--  Aluehallintoviraston toimialueen raja --> 
+ 
         
         <Rule>
           <Name>84112</Name>
@@ -390,10 +343,8 @@
               <ogc:Literal>84112</ogc:Literal>
             </ogc:PropertyIsEqualTo>
           </ogc:Filter>      
-
-          <!--MinScaleDenominator>1500000</MinScaleDenominator-->
-          <!--MaxScaleDenominator>5000000</MaxScaleDenominator-->
-
+          
+          
           
           <LineSymbolizer uom="http://www.opengeospatial.org/se/units/metre">
             <Stroke>
@@ -406,7 +357,7 @@
       
         </Rule>        
     
-<!--  Valtakunnan raja --> 
+ 
         
         <Rule>
           <Name>84111</Name>
@@ -418,10 +369,8 @@
               <ogc:Literal>84111</ogc:Literal>
             </ogc:PropertyIsEqualTo>
           </ogc:Filter>      
-
-          <!--MinScaleDenominator>1500000</MinScaleDenominator-->
-          <!--MaxScaleDenominator>5000000</MaxScaleDenominator-->
-
+          
+          
           
           <LineSymbolizer uom="http://www.opengeospatial.org/se/units/metre">
             <Stroke>
@@ -435,7 +384,6 @@
         </Rule>     
     
     
-
       </FeatureTypeStyle>
     </UserStyle>
   </NamedLayer>  
@@ -444,8 +392,7 @@
     <UserStyle>
       <FeatureTypeStyle> 
   
-
-<!--  Rautatieviiva --> 
+ 
         
         <Rule>
           <Name>14110</Name>
@@ -457,10 +404,8 @@
               <ogc:Literal>14110</ogc:Literal>
             </ogc:PropertyIsEqualTo>
           </ogc:Filter>      
-
-          <!--MinScaleDenominator>1500000</MinScaleDenominator-->
-          <!--MaxScaleDenominator>5000000</MaxScaleDenominator-->
-
+          
+          
           
           <LineSymbolizer uom="http://www.opengeospatial.org/se/units/metre">
             <Stroke>
@@ -479,14 +424,9 @@
               <CssParameter name="stroke-dasharray">2800 2800</CssParameter>        
               <CssParameter name="stroke-linejoin">round</CssParameter>        
             </Stroke>
-          </LineSymbolizer>        
-      
+          </LineSymbolizer>              
         </Rule>          
-    
-      </FeatureTypeStyle>        
-
-
-
+          </FeatureTypeStyle>        
     </UserStyle>
   </NamedLayer>  
   
@@ -495,9 +435,8 @@
     <UserStyle>
       <FeatureTypeStyle> 
 	  
-
  
-<!--  kanta- ja valtatiet sek� ahvenanmaan tiet (tieluokka 3) --> 
+ 
         
         <Rule>
           <Name>kanta- ja valtatiet </Name>
@@ -519,9 +458,8 @@
               </ogc:PropertyIsEqualTo>        
             </ogc:Or>
           </ogc:Filter>      
-
-          <!--MinScaleDenominator>1500000</MinScaleDenominator-->
-          <!--MaxScaleDenominator>5000000</MaxScaleDenominator-->
+          
+          
       
           
           <LineSymbolizer uom="http://www.opengeospatial.org/se/units/metre">
@@ -542,9 +480,7 @@
     <Name>mtkshp4500k:taajamapiste4500</Name>
     <UserStyle>
       <FeatureTypeStyle>           
-
-<!--   Taajamapiste alle 1000 asukasta -->    
-
+    
         <Rule>
           <Name>40200</Name>
           <Title>40200 Taajamapiste alle 1000 asukasta</Title>
@@ -561,9 +497,8 @@
               </ogc:PropertyIsEqualTo>        
             </ogc:And>
           </ogc:Filter>
-
-          <!--MinScaleDenominator>1500000</MinScaleDenominator-->
-          <!--MaxScaleDenominator>5000000</MaxScaleDenominator-->    
+          
+              
       
           <PointSymbolizer uom="http://www.opengeospatial.org/se/units/metre">
             <Graphic>
@@ -576,7 +511,6 @@
               <Size>6800</Size>
             </Graphic>              
           </PointSymbolizer>
-
           <PointSymbolizer uom="http://www.opengeospatial.org/se/units/metre">
             <Graphic>
               <Mark>
@@ -590,9 +524,7 @@
           </PointSymbolizer>      
       
         </Rule>
-
-<!--   Taajamapiste 1000-5000 asukasta -->    
-
+    
         <Rule>
           <Name>40200</Name>
           <Title>40200 Taajamapiste 1000-5000 asukasta</Title>
@@ -609,9 +541,8 @@
               </ogc:PropertyIsEqualTo>        
             </ogc:And>
           </ogc:Filter>
-
-          <!--MinScaleDenominator>1500000</MinScaleDenominator-->
-          <!--MaxScaleDenominator>5000000</MaxScaleDenominator-->    
+          
+              
       
           <PointSymbolizer uom="http://www.opengeospatial.org/se/units/metre">
             <Graphic>
@@ -624,7 +555,6 @@
               <Size>6800</Size>
             </Graphic>              
           </PointSymbolizer>
-
           <PointSymbolizer uom="http://www.opengeospatial.org/se/units/metre">
             <Graphic>
               <Mark>
@@ -638,9 +568,7 @@
           </PointSymbolizer>      
       
         </Rule>
-
-<!--   Taajamapiste 5000-20000 asukasta -->    
-
+    
         <Rule>
           <Name>40200</Name>
           <Title>40200 Taajamapiste 5000-20000 asukasta</Title>
@@ -657,9 +585,8 @@
               </ogc:PropertyIsEqualTo>        
             </ogc:And>
           </ogc:Filter>
-
-          <!--MinScaleDenominator>1500000</MinScaleDenominator-->
-          <!--MaxScaleDenominator>5000000</MaxScaleDenominator-->    
+          
+              
       
           <PointSymbolizer uom="http://www.opengeospatial.org/se/units/metre">
             <Graphic>
@@ -672,7 +599,6 @@
               <Size>6800</Size>
             </Graphic>              
           </PointSymbolizer>
-
           <PointSymbolizer uom="http://www.opengeospatial.org/se/units/metre">
             <Graphic>
               <Mark>
@@ -687,8 +613,7 @@
       
         </Rule>    
       
-<!--   Taajamapiste 20000-50000 asukasta -->    
-
+    
         <Rule>
           <Name>40200</Name>
           <Title>40200 Taajamapiste 20000-50000 asukasta</Title>
@@ -705,9 +630,8 @@
               </ogc:PropertyIsEqualTo>        
             </ogc:And>
           </ogc:Filter>
-
-          <!--MinScaleDenominator>1500000</MinScaleDenominator-->
-          <!--MaxScaleDenominator>5000000</MaxScaleDenominator-->    
+          
+              
       
           <PointSymbolizer uom="http://www.opengeospatial.org/se/units/metre">
             <Graphic>
@@ -720,7 +644,6 @@
               <Size>8800</Size>
             </Graphic>              
           </PointSymbolizer>
-
           <PointSymbolizer uom="http://www.opengeospatial.org/se/units/metre">
             <Graphic>
               <Mark>
@@ -734,9 +657,7 @@
           </PointSymbolizer>       
       
         </Rule>      
-
-<!--   Taajamapiste 50000-100000 asukasta -->    
-
+    
         <Rule>
           <Name>40200</Name>
           <Title>40200 Taajamapiste 50000-100000 asukasta</Title>
@@ -753,9 +674,8 @@
               </ogc:PropertyIsEqualTo>        
             </ogc:And>
           </ogc:Filter>
-
-          <!--MinScaleDenominator>1500000</MinScaleDenominator-->
-          <!--MaxScaleDenominator>5000000</MaxScaleDenominator-->    
+          
+              
       
           <PointSymbolizer uom="http://www.opengeospatial.org/se/units/metre">
             <Graphic>
@@ -768,7 +688,6 @@
               <Size>10000</Size>
             </Graphic>              
           </PointSymbolizer>
-
           <PointSymbolizer uom="http://www.opengeospatial.org/se/units/metre">
             <Graphic>
               <Mark>
@@ -783,9 +702,7 @@
     
       
         </Rule>      
-
-<!--   Taajamapiste yli 100000 asukasta -->    
-
+    
         <Rule>
           <Name>40200</Name>
           <Title>40200 Taajamapiste yli 100000 asukasta</Title>
@@ -802,9 +719,8 @@
               </ogc:PropertyIsEqualTo>        
             </ogc:And>
           </ogc:Filter>
-
-          <!--MinScaleDenominator>1500000</MinScaleDenominator-->
-          <!--MaxScaleDenominator>5000000</MaxScaleDenominator-->    
+          
+              
       
           <PointSymbolizer uom="http://www.opengeospatial.org/se/units/metre">
             <Graphic>
@@ -817,7 +733,6 @@
               <Size>10000</Size>
             </Graphic>              
           </PointSymbolizer>
-
           <PointSymbolizer uom="http://www.opengeospatial.org/se/units/metre">
             <Graphic>
               <Mark>
@@ -850,15 +765,13 @@
   <NamedLayer>  
     <Name>mtk:karttanimi_4000000</Name>
     <UserStyle>
-
       <Title>taustakartta_4000k_paikannimi</Title>
       <Abstract>paikannimet taustakartta 4000k</Abstract>
-
   
       <FeatureTypeStyle> 
   
       
-  <!-- harmaat, kallistus=0 -->
+  
         <Rule>
         
            <ogc:Filter>
@@ -873,12 +786,9 @@
               </ogc:PropertyIsEqualTo>
             </ogc:And>        
           </ogc:Filter>  
-
-          <!--MinScaleDenominator>1500000</MinScaleDenominator-->
-          <!--MaxScaleDenominator>5000000</MaxScaleDenominator-->
-
+          
+          
        
-
         
           <TextSymbolizer uom="http://www.opengeospatial.org/se/units/metre">
             <Label>
@@ -909,7 +819,6 @@
                   <AnchorPointX>0</AnchorPointX>
                   <AnchorPointY>0</AnchorPointY>
                 </AnchorPoint>
-
                  <Displacement>
                   <DisplacementX>-250</DisplacementX>
                   <DisplacementY>-2000</DisplacementY>
@@ -933,7 +842,6 @@
           </TextSymbolizer>
        </Rule>            
  
-<!-- siniset (kirjvari=20) ja kallistus -15 -->
         <Rule>
         
           <ogc:Filter>
@@ -948,12 +856,9 @@
               </ogc:PropertyIsEqualTo>
             </ogc:And>        
           </ogc:Filter> 
-
-          <!--MinScaleDenominator>1500000</MinScaleDenominator-->
-          <!--MaxScaleDenominator>5000000</MaxScaleDenominator-->
-
+          
+          
        
-
         
           <TextSymbolizer uom="http://www.opengeospatial.org/se/units/metre">
             <Label>
@@ -984,12 +889,10 @@
                   <AnchorPointX>0</AnchorPointX>
                   <AnchorPointY>0</AnchorPointY>
                 </AnchorPoint>
-
                  <Displacement>
                   <DisplacementX>-250</DisplacementX>
                   <DisplacementY>-2000</DisplacementY>
                 </Displacement> 
-
                  <Rotation>
                    <ogc:Function name="toDegrees">
                     <ogc:Div>
@@ -1002,7 +905,6 @@
               </PointPlacement>
             </LabelPlacement>       
       
-
      
             <Fill>
               <CssParameter name="fill">#075799</CssParameter>
@@ -1011,7 +913,6 @@
             <VendorOption name="partials">true</VendorOption>
           </TextSymbolizer>
        </Rule> 
-
       </FeatureTypeStyle>  
   
   

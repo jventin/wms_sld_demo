@@ -380,7 +380,7 @@
                 <ogc:Literal>10</ogc:Literal>
               </ogc:PropertyIsEqualTo>
               <ogc:PropertyIsEqualTo>
-                <ogc:PropertyName>paikkatyypikoodi</ogc:PropertyName>
+                <ogc:PropertyName>paikkatyyppikoodi</ogc:PropertyName>
                 <ogc:Literal>540</ogc:Literal>
               </ogc:PropertyIsEqualTo>			  
             </ogc:And>        

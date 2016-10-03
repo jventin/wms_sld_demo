@@ -150,20 +150,13 @@
       <FeatureTypeStyle> 
 
         <Rule>
-          <Name>36325</Name>
-          <Title>36325 yli 500 m leve� virtavesi</Title>          
-      
-          <ogc:Filter>
-            <ogc:PropertyIsEqualTo>
-              <ogc:PropertyName>kohdeluokk</ogc:PropertyName>
-              <ogc:Literal>36325</ogc:Literal>
-            </ogc:PropertyIsEqualTo>
-          </ogc:Filter>      
-
+          <Name>rivers</Name>
+          <Title>rivers</Title>          
+        
           <LineSymbolizer uom="http://www.opengeospatial.org/se/units/metre">
             <Stroke>
               <CssParameter name="stroke">#86bce3</CssParameter>
-              <CssParameter name="stroke-width">1400</CssParameter>              
+              <CssParameter name="stroke-width">600</CssParameter>              
               <CssParameter name="stroke-linecap">round</CssParameter>
               <CssParameter name="stroke-linejoin">round</CssParameter>        
             </Stroke>

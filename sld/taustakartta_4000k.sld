@@ -144,7 +144,7 @@
       </FeatureTypeStyle>
     </UserStyle>
   </NamedLayer>  
-  <!--NamedLayer>
+  <NamedLayer>
     <Name>mtkshp4500k:vesiviiva4500</Name>
     <UserStyle>
       <FeatureTypeStyle> 
@@ -171,108 +171,9 @@
       
         </Rule>        
 
-        <Rule>
-          <Name>36324</Name>
-          <Title>36324 125-500 m levea virtavesi</Title>          
-      
-          <ogc:Filter>
-            <ogc:PropertyIsEqualTo>
-              <ogc:PropertyName>kohdeluokk</ogc:PropertyName>
-              <ogc:Literal>36324</ogc:Literal>
-            </ogc:PropertyIsEqualTo>
-          </ogc:Filter>      
-
-          <LineSymbolizer uom="http://www.opengeospatial.org/se/units/metre">
-            <Stroke>
-              <CssParameter name="stroke">#86bce3</CssParameter>
-              <CssParameter name="stroke-width">1400</CssParameter>              
-              <CssParameter name="stroke-linecap">round</CssParameter>
-              <CssParameter name="stroke-linejoin">round</CssParameter>        
-            </Stroke>
-          </LineSymbolizer>      
-      
-        </Rule>        
-    
- 
-        
-        <Rule>
-          <Name>36322</Name>
-          <Title>36322 50-125 m levea virtavesi</Title>          
-      
-          <ogc:Filter>
-            <ogc:PropertyIsEqualTo>
-              <ogc:PropertyName>kohdeluokk</ogc:PropertyName>
-              <ogc:Literal>36322</ogc:Literal>
-            </ogc:PropertyIsEqualTo>
-          </ogc:Filter>      
-          
-          
-          
-          <LineSymbolizer uom="http://www.opengeospatial.org/se/units/metre">
-            <Stroke>
-              <CssParameter name="stroke">#86bce3</CssParameter>
-              <CssParameter name="stroke-width">400</CssParameter>              
-              <CssParameter name="stroke-linecap">round</CssParameter>
-              <CssParameter name="stroke-linejoin">round</CssParameter>        
-            </Stroke>
-          </LineSymbolizer>      
-      
-        </Rule>        
-    
- 
-        
-        <Rule>
-          <Name>36321</Name>
-          <Title>36321 20-50 m leve� virtavesi</Title>          
-      
-          <ogc:Filter>
-            <ogc:PropertyIsEqualTo>
-              <ogc:PropertyName>kohdeluokk</ogc:PropertyName>
-              <ogc:Literal>36321</ogc:Literal>
-            </ogc:PropertyIsEqualTo>
-          </ogc:Filter>      
-          
-          
-          
-          <LineSymbolizer uom="http://www.opengeospatial.org/se/units/metre">
-            <Stroke>
-              <CssParameter name="stroke">#86bce3</CssParameter>
-              <CssParameter name="stroke-width">400</CssParameter>              
-              <CssParameter name="stroke-linecap">round</CssParameter>
-              <CssParameter name="stroke-linejoin">round</CssParameter>        
-            </Stroke>
-          </LineSymbolizer>      
-      
-        </Rule>        
-    
- 
-        
-        <Rule>
-          <Name>36314</Name>
-          <Title>36314 5-20 m leve� virtavesi</Title>          
-      
-          <ogc:Filter>
-            <ogc:PropertyIsEqualTo>
-              <ogc:PropertyName>kohdeluokk</ogc:PropertyName>
-              <ogc:Literal>36314</ogc:Literal>
-            </ogc:PropertyIsEqualTo>
-          </ogc:Filter>      
-          
-          
-          
-          <LineSymbolizer uom="http://www.opengeospatial.org/se/units/metre">
-            <Stroke>
-              <CssParameter name="stroke">#86bce3</CssParameter>
-              <CssParameter name="stroke-width">400</CssParameter>              
-              <CssParameter name="stroke-linecap">round</CssParameter>
-              <CssParameter name="stroke-linejoin">round</CssParameter>        
-            </Stroke>
-          </LineSymbolizer>      
-      
-        </Rule>      
       </FeatureTypeStyle>
     </UserStyle>
-  </NamedLayer-->  
+  </NamedLayer>  
   <NamedLayer>
     <Name>mtkshp4500k:hallintoalueraja</Name>
     <UserStyle>

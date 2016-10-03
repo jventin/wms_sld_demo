@@ -26,7 +26,7 @@
           <Name>meri_taustakartta</Name>
           <PolygonSymbolizer>
             <Fill>
-              <CssParameter name="fill">#bfd8ff</CssParameter>
+              <CssParameter name="fill">#a3ccff</CssParameter>
             </Fill>
           </PolygonSymbolizer>
         </Rule>
@@ -52,7 +52,7 @@
 
           <PolygonSymbolizer> 
             <Fill>       
-              <CssParameter name="fill">#D2FFDA</CssParameter>
+              <CssParameter name="fill">#f3f1ed</CssParameter>
 			  
             </Fill>
 			
@@ -81,7 +81,7 @@
           
           <PolygonSymbolizer> 
             <Fill>       
-              <CssParameter name="fill">#bfd8ff</CssParameter>
+              <CssParameter name="fill">#a3ccff</CssParameter>
             </Fill>
           </PolygonSymbolizer>  
           
@@ -100,14 +100,14 @@
 
           <PolygonSymbolizer> 
             <Fill>       
-              <CssParameter name="fill">#bfd8ff</CssParameter>
+              <CssParameter name="fill">#a3ccff</CssParameter>
             </Fill>
           </PolygonSymbolizer>  
           
           <LineSymbolizer uom="http://www.opengeospatial.org/se/units/metre">
             <Stroke>
               <CssParameter name="stroke">#86bce3</CssParameter>
-              <CssParameter name="stroke-width">400</CssParameter>              
+              <CssParameter name="stroke-width">50</CssParameter>              
               <CssParameter name="stroke-linecap">round</CssParameter>
               <CssParameter name="stroke-linejoin">round</CssParameter>        
             </Stroke>
@@ -136,7 +136,7 @@
           <LineSymbolizer uom="http://www.opengeospatial.org/se/units/metre">
             <Stroke>
               <CssParameter name="stroke">#86bce3</CssParameter>
-              <CssParameter name="stroke-width">400</CssParameter>              
+              <CssParameter name="stroke-width">50</CssParameter>              
               <CssParameter name="stroke-linecap">round</CssParameter>
               <CssParameter name="stroke-linejoin">round</CssParameter>        
             </Stroke>
@@ -157,7 +157,7 @@
         
           <LineSymbolizer uom="http://www.opengeospatial.org/se/units/metre">
             <Stroke>
-              <CssParameter name="stroke">#86bce3</CssParameter>
+              <CssParameter name="stroke">#a3ccff</CssParameter>
               <CssParameter name="stroke-width">600</CssParameter>              
               <CssParameter name="stroke-linecap">round</CssParameter>
               <CssParameter name="stroke-linejoin">round</CssParameter>        

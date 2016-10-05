@@ -33,7 +33,7 @@
       </FeatureTypeStyle>
     </UserStyle>
   </NamedLayer>  
- <!-- 
+  
   <NamedLayer>
     <Name>mtkshp4500k:korkeusalue</Name>
     <UserStyle>
@@ -62,7 +62,7 @@
       </FeatureTypeStyle>
     </UserStyle>
   </NamedLayer>  
-  
+  <!--
   <NamedLayer>
     <Name>mtkshp4500k:vesialue</Name>
     <UserStyle>

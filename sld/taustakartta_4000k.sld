@@ -62,7 +62,7 @@
       </FeatureTypeStyle>
     </UserStyle>
   </NamedLayer>  
-  <!--
+ 
   <NamedLayer>
     <Name>mtkshp4500k:vesialue</Name>
     <UserStyle>
@@ -117,7 +117,7 @@
       </FeatureTypeStyle>
     </UserStyle>
   </NamedLayer>  
-  <NamedLayer>
+  <!-- <NamedLayer>
     <Name>mtkshp4500k:maasto1reuna</Name>
     <UserStyle>
       <FeatureTypeStyle> 

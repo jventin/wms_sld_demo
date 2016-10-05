@@ -100,7 +100,7 @@
 
           <PolygonSymbolizer> 
             <Fill>       
-              <CssParameter name="fill">#a3ccff</CssParameter>
+              <CssParameter name="fill">#ff0000</CssParameter>
             </Fill>
           </PolygonSymbolizer>  
           

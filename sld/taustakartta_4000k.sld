@@ -117,7 +117,7 @@
       </FeatureTypeStyle>
     </UserStyle>
   </NamedLayer>  
-  <!-- <NamedLayer>
+   <NamedLayer>
     <Name>mtkshp4500k:maasto1reuna</Name>
     <UserStyle>
       <FeatureTypeStyle> 
@@ -169,7 +169,7 @@
       </FeatureTypeStyle>
     </UserStyle>
   </NamedLayer>  
-  <NamedLayer>
+<!--  <NamedLayer>
     <Name>mtkshp4500k:hallintoalueraja</Name>
     <UserStyle>
       <FeatureTypeStyle> 
